@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Therthal Arikkai 2026 — 100-Point People's Manifesto</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #1a1a18;
+  --ink2: #3d3d38;
+  --ink3: #6b6b65;
+  --paper: #faf8f3;
+  --cream: #f0ece0;
+  --rule: #d4cfc0;
+  --accent: #b5451b;
+  --accent2: #1b5eb5;
+  --accent3: #1a7a3c;
+  --gold: #c89b2a;
+  --cat1: #b5451b;
+  --cat2: #1b5eb5;
+  --cat3: #1a7a3c;
+  --cat4: #6b3fa0;
+  --cat5: #8a5c1a;
+  --cat6: #185f6e;
+  --cat7: #3a7a1a;
+  --cat8: #8a1a2a;
+  --cat9: #c87a1a;
+  --cat10: #1a3a6e;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.65;
+}
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 48px;
+}
+
+/* MASTHEAD */
+.masthead {
+  border-top: 3px solid var(--ink);
+  border-bottom: 1px solid var(--rule);
+  padding: 32px 0 28px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+.masthead-eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--ink3);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.masthead h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.masthead h1 span { color: var(--accent); font-style: italic; }
+.masthead-sub {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 15px;
+  font-style: italic;
+  color: var(--ink2);
+  margin-bottom: 14px;
+}
+.masthead-tagline {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  color: var(--ink3);
+  text-transform: uppercase;
+  border-top: 1px solid var(--rule);
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+/* PREAMBLE */
+.preamble {
+  background: var(--cream);
+  border-left: 3px solid var(--accent);
+  padding: 16px 20px;
+  margin-bottom: 36px;
+  font-size: 12.5px;
+  color: var(--ink2);
+  font-style: italic;
+  line-height: 1.7;
+}
+.preamble strong { color: var(--ink); font-style: normal; font-weight: 600; }
+
+/* CATEGORY SECTION */
+.category {
+  margin-bottom: 40px;
+  break-inside: avoid;
+}
+.cat-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--ink);
+}
+.cat-number {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: var(--ink3);
+  letter-spacing: 0.12em;
+  padding-top: 4px;
+  white-space: nowrap;
+}
+.cat-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 22px;
+  font-weight: 700;
+  flex: 1;
+}
+.cat-budget {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  text-align: right;
+  color: var(--ink3);
+  line-height: 1.5;
+  padding-top: 3px;
+}
+.cat-budget strong { color: var(--ink); display: block; font-size: 11px; }
+
+/* POINTS */
+.points-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.point {
+  border: 0.5px solid var(--rule);
+  border-left: 3px solid var(--rule);
+  padding: 9px 11px;
+  background: white;
+}
+.point-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9.5px;
+  color: var(--ink3);
+  margin-bottom: 2px;
+  letter-spacing: 0.08em;
+}
+.point-title {
+  font-weight: 600;
+  font-size: 12.5px;
+  color: var(--ink);
+  margin-bottom: 3px;
+  line-height: 1.3;
+}
+.point-desc {
+  font-size: 11.5px;
+  color: var(--ink2);
+  line-height: 1.5;
+}
+.funding-strip {
+  background: var(--cream);
+  border: 0.5px solid var(--rule);
+  padding: 8px 12px;
+  font-size: 11.5px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.funding-item { color: var(--ink2); }
+.funding-item strong { color: var(--ink); font-weight: 600; }
+
+/* COLOR OVERRIDES PER CATEGORY */
+.cat-1 .cat-title, .cat-1 .cat-number { color: var(--cat1); }
+.cat-1 .cat-header { border-bottom-color: var(--cat1); }
+.cat-1 .point { border-left-color: var(--cat1); }
+
+.cat-2 .cat-title, .cat-2 .cat-number { color: var(--cat2); }
+.cat-2 .cat-header { border-bottom-color: var(--cat2); }
+.cat-2 .point { border-left-color: var(--cat2); }
+
+.cat-3 .cat-title, .cat-3 .cat-number { color: var(--cat3); }
+.cat-3 .cat-header { border-bottom-color: var(--cat3); }
+.cat-3 .point { border-left-color: var(--cat3); }
+
+.cat-4 .cat-title, .cat-4 .cat-number { color: var(--cat4); }
+.cat-4 .cat-header { border-bottom-color: var(--cat4); }
+.cat-4 .point { border-left-color: var(--cat4); }
+
+.cat-5 .cat-title, .cat-5 .cat-number { color: var(--cat5); }
+.cat-5 .cat-header { border-bottom-color: var(--cat5); }
+.cat-5 .point { border-left-color: var(--cat5); }
+
+.cat-6 .cat-title, .cat-6 .cat-number { color: var(--cat6); }
+.cat-6 .cat-header { border-bottom-color: var(--cat6); }
+.cat-6 .point { border-left-color: var(--cat6); }
+
+.cat-7 .cat-title, .cat-7 .cat-number { color: var(--cat7); }
+.cat-7 .cat-header { border-bottom-color: var(--cat7); }
+.cat-7 .point { border-left-color: var(--cat7); }
+
+.cat-8 .cat-title, .cat-8 .cat-number { color: var(--cat8); }
+.cat-8 .cat-header { border-bottom-color: var(--cat8); }
+.cat-8 .point { border-left-color: var(--cat8); }
+
+.cat-9 .cat-title, .cat-9 .cat-number { color: var(--cat9); }
+.cat-9 .cat-header { border-bottom-color: var(--cat9); }
+.cat-9 .point { border-left-color: var(--cat9); }
+
+.cat-10 .cat-title, .cat-10 .cat-number { color: var(--cat10); }
+.cat-10 .cat-header { border-bottom-color: var(--cat10); }
+.cat-10 .point { border-left-color: var(--cat10); }
+
+/* GAME CHANGERS */
+.gamechanger-section {
+  margin: 40px 0 32px;
+  border-top: 3px solid var(--ink);
+  padding-top: 28px;
+}
+.section-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.gc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.gc-item {
+  background: var(--ink);
+  color: white;
+  padding: 12px 14px;
+}
+.gc-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  color: #aaa;
+  margin-bottom: 4px;
+}
+.gc-title { font-weight: 600; font-size: 12.5px; margin-bottom: 3px; }
+.gc-why { font-size: 11px; color: #ccc; line-height: 1.4; }
+
+.risk-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 28px; }
+.risk-item { border: 1.5px solid var(--accent); padding: 12px; }
+.risk-num { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: var(--accent); letter-spacing: 0.15em; margin-bottom: 4px; }
+.risk-title { font-weight: 600; font-size: 12.5px; color: var(--ink); margin-bottom: 4px; }
+.risk-desc { font-size: 11.5px; color: var(--ink2); line-height: 1.4; }
+
+.trust-section { border-top: 1px solid var(--rule); padding-top: 22px; }
+.trust-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+.trust-item { background: var(--cream); padding: 12px; }
+.trust-label { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: var(--ink3); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 5px; }
+.trust-title { font-weight: 600; font-size: 12px; margin-bottom: 3px; color: var(--ink); }
+.trust-desc { font-size: 11px; color: var(--ink2); line-height: 1.4; }
+
+.footer {
+  border-top: 2px solid var(--ink);
+  margin-top: 40px;
+  padding-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9.5px;
+  color: var(--ink3);
+  letter-spacing: 0.08em;
+}
+
+@media print {
+  body { background: white; }
+  .page { padding: 24px 32px; }
+  .points-grid { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="masthead">
+  <div class="masthead-eyebrow">Tamil Nadu Assembly Election 2026 — Independent People's Candidate</div>
+  <h1>Therthal <span>Arikkai</span></h1>
+  <div class="masthead-sub">A 100-Point Manifesto for a Transformed Tamil Nadu</div>
+  <div class="masthead-tagline">No Freebies Without Foundation · No Promise Without a Plan · No Power Without Accountability</div>
+</div>
+
+<div class="preamble">
+  <strong>A note to Tamil Nadu:</strong> This manifesto contains no slogans, no dynasty, and no populism for its own sake. Every promise here is backed by a funding source, a timeline, and a measurable outcome. Where welfare is promised, it is earned through work or tied to a productive purpose. Where infrastructure is promised, it is costed against a real budget. Tamil Nadu's GSDP is ₹35.7 lakh crore — large enough to fund transformation, if governed without leakage. This is a plan to earn your trust, not buy your vote.
+</div>
+
+<!-- CATEGORY 1 -->
+<div class="category cat-1">
+  <div class="cat-header">
+    <div class="cat-number">CAT. 01 / 10</div>
+    <div class="cat-title">Economy &amp; Jobs</div>
+    <div class="cat-budget">
+      <strong>Budget: ₹42,000–55,000 Cr / 5 yrs</strong>
+      Funding: Industrial bonds, PPP, Centre MSME schemes, state GSDP re-allocation
+    </div>
+  </div>
+  <div class="points-grid">
+    <div class="point">
+      <div class="point-num">POINT 01</div>
+      <div class="point-title">Tamil Nadu MSME Credit Guarantee Fund</div>
+      <div class="point-desc">A ₹5,000 crore state-backed fund providing collateral-free loans up to ₹25 lakh to micro enterprises within 15 working days via a single digital portal with AI-based risk scoring.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 02</div>
+      <div class="point-title">One District, One Industry Cluster</div>
+      <div class="point-desc">Each of the 38 districts will have a designated anchor industry cluster (textiles, leather, auto-parts, agro-processing) with dedicated land, power, and logistics — no new land acquisition where industrial parks already exist.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 03</div>
+      <div class="point-title">GCC+2 Policy: Tier-2 City Push</div>
+      <div class="point-desc">Offer Global Capability Centre incentives (5-year GST concession, pre-built office parks) in Coimbatore, Madurai, and Tiruchirappalli — taking tech jobs out of the Chennai-only corridor.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 04</div>
+      <div class="point-title">Formalise the Informal Economy</div>
+      <div class="point-desc">Register 25 lakh informal workers (street vendors, gig workers, domestic help) into a state social security ledger linked to Aadhaar — unlocking credit, insurance, and pension access without new bureaucracy.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 05</div>
+      <div class="point-title">Tamil Nadu Export Acceleration Programme</div>
+      <div class="point-desc">Target ₹4 lakh crore in state exports by 2030 by creating 5 dedicated export facilitation cells — one each for garments, auto, pharma, spices, and IT services — with single-window clearance under 72 hours.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 06</div>
+      <div class="point-title">Semiconductor &amp; Electronics Manufacturing Zone</div>
+      <div class="point-desc">Partner with 3 anchor investors (domestic + foreign) for a dedicated 500-acre semiconductor fabrication zone near Hosur, with water, power, and effluent treatment infrastructure pre-built by TIDCO.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 07</div>
+      <div class="point-title">TANGEDCO Financial Restructuring Plan</div>
+      <div class="point-desc">Commission an independent audit of TANGEDCO's ₹40,000 crore accumulated losses and implement a 3-year turnaround plan — including smart metering, transmission loss reduction to under 12%, and phased tariff rationalisation.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 08</div>
+      <div class="point-title">Apprenticeship-to-Employment Pipeline</div>
+      <div class="point-desc">Mandate every company with 100+ employees to take 2% of their workforce as paid apprentices (₹8,000–15,000/month, state co-funds 40%) — targeting 3 lakh apprenticeships in Year 1.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 09</div>
+      <div class="point-title">Tamil Nadu Sovereign Investment Fund</div>
+      <div class="point-desc">Create a ₹10,000 crore state investment vehicle (funded by disinvestment of non-strategic PSU stakes) to take equity in high-growth Tamil companies — returns reinvested into infrastructure.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 10</div>
+      <div class="point-title">Logistics Backbone: Multimodal Freight Corridors</div>
+      <div class="point-desc">Develop 3 multimodal freight corridors (Chennai-Coimbatore, Madurai-Tuticorin, Salem-Krishnagiri) linking road, rail, and port under a PPP model — reducing logistics cost from 14% to under 9% of product value.</div>
+    </div>
+  </div>
+  <div class="funding-strip">
+    <div class="funding-item"><strong>Primary:</strong> Industrial bonds (AAA rated, 7% yield)</div>
+    <div class="funding-item"><strong>PPP:</strong> 60% of industrial zone capex from private sector</div>
+    <div class="funding-item"><strong>Centre:</strong> PM GatiShakti, PLI schemes co-funding</div>
+    <div class="funding-item"><strong>Savings:</strong> TANGEDCO reform frees ₹8,000 Cr/yr from loss subsidy</div>
+  </div>
+</div>
+
+<!-- CATEGORY 2 -->
+<div class="category cat-2">
+  <div class="cat-header">
+    <div class="cat-number">CAT. 02 / 10</div>
+    <div class="cat-title">Education</div>
+    <div class="cat-budget">
+      <strong>Budget: ₹28,000–35,000 Cr / 5 yrs</strong>
+      Funding: State education cess (1%), CSR mandates, World Bank EdTech loan, existing budget reallocation
+    </div>
+  </div>
+  <div class="points-grid">
+    <div class="point">
+      <div class="point-num">POINT 11</div>
+      <div class="point-title">Universal Foundational Literacy by Class 3</div>
+      <div class="point-desc">Deploy AI-powered adaptive learning tablets in all 37,000+ government primary schools with daily teacher dashboard tracking — eliminating reading-level deficits by age 8, measured by annual state-administered literacy census.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 12</div>
+      <div class="point-title">Teacher Quality Reform: Merit + Pay</div>
+      <div class="point-desc">Replace seniority-based promotion with performance-linked pay bands (10–25% bonus for measurably improved student outcomes); fill all 40,000+ vacant government school teacher posts within 18 months via transparent TNPSC cycles.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 13</div>
+      <div class="point-title">CM's Model Schools: 234 Constituency Schools</div>
+      <div class="point-desc">Transform one government school per assembly constituency into a fully equipped "Model School" with science labs, computer labs, sports facilities, and English/Tamil bilingual instruction — completed within 3 years.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 14</div>
+      <div class="point-title">Skill-Linked Scholarship Ladder</div>
+      <div class="point-desc">Replace generic freebie scholarship schemes with an outcome-linked ladder: ₹500/month for attendance above 85%, ₹1,500 on clearing Class 10, ₹3,000 on ITI/Polytechnic completion, ₹5,000 on degree — paid directly to student account.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 15</div>
+      <div class="point-title">One ITI Per Taluk — Upgraded to Industry 4.0</div>
+      <div class="point-desc">Upgrade all 285 ITIs in the state with CNC machining, robotics, EV servicing, and solar installation modules. Each ITI to have an Industry Advisory Board; 80% placement within 6 months of completion as KPI.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 16</div>
+      <div class="point-title">Tamil Nadu Digital University</div>
+      <div class="point-desc">Launch a fully online accredited university delivering degree and diploma programmes in Tamil and English — targeting 5 lakh enrolled students by Year 3, with industry-designed curriculum and proctored offline exams.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 17</div>
+      <div class="point-title">Nutrition + Learning Integration</div>
+      <div class="point-desc">Extend the CM Breakfast Scheme to all government schools through Class 10 (currently limited), with monthly nutritional audits and a state-sourced menu using local SHG produce — creating SHG employment while improving outcomes.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 18</div>
+      <div class="point-title">Higher Education Research Fund</div>
+      <div class="point-desc">Create a ₹2,000 crore Tamil Nadu Research &amp; Innovation Fund awarding competitive grants to state universities for applied research with industry co-investment — targeting 500 patent applications in 5 years.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 19</div>
+      <div class="point-title">Anti-Dropout Tracking System</div>
+      <div class="point-desc">Deploy a real-time student attendance and dropout early-warning system integrated with Aadhaar; each block-level social worker is assigned 50 at-risk students to follow up within 48 hours of any 3-day absence.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 20</div>
+      <div class="point-title">NEET-Free Medical Admission via State Exam</div>
+      <div class="point-desc">Push for constitutional amendment to move medical education to State List, and in the interim maximise the government school student quota to 15% in state medical colleges, tracked with outcome data for 5 years before expansion.</div>
+    </div>
+  </div>
+  <div class="funding-strip">
+    <div class="funding-item"><strong>Cess:</strong> 1% education cess on commercial property tax = ₹1,200 Cr/yr</div>
+    <div class="funding-item"><strong>CSR:</strong> Mandated EdTech CSR from TN-based companies</div>
+    <div class="funding-item"><strong>World Bank:</strong> Tamil Nadu Skills Development Project (existing framework)</div>
+    <div class="funding-item"><strong>Efficiency:</strong> Consolidating under-enrolled schools saves ₹600 Cr/yr</div>
+  </div>
+</div>
+
+<!-- CATEGORY 3 -->
+<div class="category cat-3">
+  <div class="cat-header">
+    <div class="cat-number">CAT. 03 / 10</div>
+    <div class="cat-title">Healthcare</div>
+    <div class="cat-budget">
+      <strong>Budget: ₹22,000–28,000 Cr / 5 yrs</strong>
+      Funding: Health infrastructure bonds, NHM co-funding, public health cess on tobacco/alcohol
+    </div>
+  </div>
+  <div class="points-grid">
+    <div class="point">
+      <div class="point-num">POINT 21</div>
+      <div class="point-title">Primary Health Centre Transformation</div>
+      <div class="point-desc">Upgrade all 1,787 PHCs in Tamil Nadu to 24×7 operation with a minimum of one doctor, one nurse, one lab technician, and a digital EMR system — completing 600 per year over 3 years.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 22</div>
+      <div class="point-title">Tamil Nadu Universal Health Card</div>
+      <div class="point-desc">Issue a single state health card to every resident giving cashless access up to ₹10 lakh for hospitalisation at all government hospitals and empanelled private hospitals — replace fragmented schemes (CMCHIS, Makkalai Thedi Maruthuvam) under one platform.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 23</div>
+      <div class="point-title">AI-Driven Diagnostic Network</div>
+      <div class="point-desc">Deploy AI diagnostic tools (chest X-ray TB screening, diabetic retinopathy, ECG analysis) in all 385 government hospitals and 500 PHCs — enabling specialists in Chennai to remotely review flagged cases within 4 hours.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 24</div>
+      <div class="point-title">Village-Level Wellness Centres (Grama Arogya)</div>
+      <div class="point-desc">Establish 6,000 village wellness centres staffed by trained Community Health Workers (CHWs) for preventive screening, maternal care, and chronic disease management — CHWs paid ₹18,000/month as state health workers (not volunteers).</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 25</div>
+      <div class="point-title">Generic Medicine Mandate: Jan Aushadhi+</div>
+      <div class="point-desc">Require all government and empanelled hospitals to prescribe generics by molecule name, not brand. Open 500 new Jan Aushadhi outlets in rural blocks — targeting 60% reduction in out-of-pocket medicine expenses for BPL families.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 26</div>
+      <div class="point-title">Mental Health First Responder Programme</div>
+      <div class="point-desc">Train 10,000 community mental health first-responders (schoolteachers, police constables, SHG leaders) in basic psychological first aid; establish a 24×7 Tamil-language crisis helpline with 200 counsellors.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 27</div>
+      <div class="point-title">Cancer Early Detection Mission</div>
+      <div class="point-desc">Implement state-wide breast and cervical cancer screening for all women above 35 through PHC camps — reaching 50 lakh women in 3 years, with tracked referral to oncology centres, targeting 40% reduction in late-stage diagnosis.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 28</div>
+      <div class="point-title">Doctor-to-Population Ratio Fix</div>
+      <div class="point-desc">Increase government medical college seats by 30% over 5 years (8 new government medical colleges in under-served districts), with a mandatory 3-year rural posting bond for all MBBS graduates from government colleges.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 29</div>
+      <div class="point-title">Drug and Alcohol De-addiction Network</div>
+      <div class="point-desc">Build 50 state-funded residential de-addiction centres (one per district, average 100-bed capacity), run as public-private partnerships with NGOs — offering 12-week residential programmes with post-care employment placement.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 30</div>
+      <div class="point-title">Siddha and Traditional Medicine Integration</div>
+      <div class="point-desc">Integrate qualified Siddha practitioners into PHCs for preventive and chronic care — not as replacement for allopathy but as a structured complement, with outcome tracking for 3 specified conditions (diabetes, arthritis, skin disorders) over 5 years.</div>
+    </div>
+  </div>
+  <div class="funding-strip">
+    <div class="funding-item"><strong>Cess:</strong> 5% public health cess on tobacco/alcohol (est. ₹2,800 Cr/yr)</div>
+    <div class="funding-item"><strong>NHM:</strong> National Health Mission Centre-state 60:40 co-funding</div>
+    <div class="funding-item"><strong>PPP:</strong> Private hospital empanelment fee cross-subsidises PHC upgrades</div>
+    <div class="funding-item"><strong>Efficiency:</strong> Single health card eliminates duplicate scheme overhead (est. ₹1,500 Cr/yr saving)</div>
+  </div>
+</div>
+
+<!-- CATEGORY 4 -->
+<div class="category cat-4">
+  <div class="cat-header">
+    <div class="cat-number">CAT. 04 / 10</div>
+    <div class="cat-title">Infrastructure &amp; Urban Development</div>
+    <div class="cat-budget">
+      <strong>Budget: ₹75,000–90,000 Cr / 5 yrs</strong>
+      Funding: Infrastructure bonds, AMRUT 3.0, municipal bond market, TIDCO PPP
+    </div>
+  </div>
+  <div class="points-grid">
+    <div class="point">
+      <div class="point-num">POINT 31</div>
+      <div class="point-title">Tamil Nadu Bus Rapid Transit Network</div>
+      <div class="point-desc">Build dedicated BRT corridors in Chennai, Coimbatore, Madurai, and Tiruchirappalli — 12 corridors totalling 280 km — with electric buses, real-time tracking, and integrated ticketing, reducing private vehicle dependence by 15%.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 32</div>
+      <div class="point-title">100% Piped Water to All Rural Households</div>
+      <div class="point-desc">Complete the Jal Jeevan Mission gaps in Tamil Nadu — targeting the remaining 22 lakh rural households without functional tap connections by 2028, with a digital water quality monitoring dashboard per village.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 33</div>
+      <div class="point-title">Urban Flood Prevention Master Plan</div>
+      <div class="point-desc">Implement a scientifically designed stormwater drainage master plan for all 21 municipal corporations — prioritising Chennai, Coimbatore, and Madurai where flooding causes ₹3,000+ crore in annual economic losses.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 34</div>
+      <div class="point-title">Affordable Housing Via Land Value Capture</div>
+      <div class="point-desc">Build 5 lakh affordable homes over 5 years using land value capture — developers get FSI bonuses in exchange for 20% affordable inventory at cost price, eliminating the need for full state subsidy.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 35</div>
+      <div class="point-title">Smart Street Lighting with Energy Savings</div>
+      <div class="point-desc">Replace all 38 lakh municipal street lights with smart LED systems on a BOOT (Build-Own-Operate-Transfer) basis — paid from energy savings of 60%+, zero upfront cost to state, reducing municipal electricity bills by ₹800 crore/year.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 36</div>
+      <div class="point-title">Solid Waste Management: Zero-Landfill by 2030</div>
+      <div class="point-desc">Implement source-level waste segregation as a legal requirement for all households and commercial establishments, with 3 waste-to-energy plants (Chennai, Coimbatore, Madurai) and district-level composting hubs processing 80% of organic waste locally.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 37</div>
+      <div class="point-title">Coastal Highway and Port Connectivity</div>
+      <div class="point-desc">Build a 4-lane coastal highway connecting Rameswaram to Kanyakumari (270 km) under a toll-based BOT model — unlocking fishing communities, tourism, and logistics for coastal Tamil Nadu's 7.6 million residents.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 38</div>
+      <div class="point-title">Municipal Finance Reform</div>
+      <div class="point-desc">Enable Tamil Nadu's top 10 municipalities to issue municipal bonds (credit-rated) for infrastructure funding — reducing dependence on state grants and creating a self-sustaining urban finance model within 3 years.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 39</div>
+      <div class="point-title">Industrial Corridor Satellite Towns</div>
+      <div class="point-desc">Develop 3 planned satellite towns (near Hosur, Ranipet, and Tuticorin industrial zones) with pre-developed worker housing, schools, and healthcare — preventing unplanned urban sprawl around existing cities.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 40</div>
+      <div class="point-title">Universal Broadband: Last-Mile Fibre</div>
+      <div class="point-desc">Complete BharatNet Phase III in Tamil Nadu with state co-funding to bring 1 Gbps fibre connectivity to all 12,618 Gram Panchayats — enabling telehealth, online education, and e-commerce for rural Tamil Nadu.</div>
+    </div>
+  </div>
+  <div class="funding-strip">
+    <div class="funding-item"><strong>Bonds:</strong> State infrastructure bonds (₹30,000 Cr, 7.5% over 15 yrs)</div>
+    <div class="funding-item"><strong>Centre:</strong> AMRUT 3.0, PM Gati Shakti (est. ₹18,000 Cr)</div>
+    <div class="funding-item"><strong>BOOT/BOT:</strong> Private sector builds, state avoids upfront capex on 12 projects</div>
+    <div class="funding-item"><strong>Municipal bonds:</strong> ₹8,000 Cr raised by 10 cities over 5 years</div>
+  </div>
+</div>
+
+<!-- CATEGORY 5 -->
+<div class="category cat-5">
+  <div class="cat-header">
+    <div class="cat-number">CAT. 05 / 10</div>
+    <div class="cat-title">Rural Development &amp; Agriculture</div>
+    <div class="cat-budget">
+      <strong>Budget: ₹30,000–38,000 Cr / 5 yrs</strong>
+      Funding: NABARD refinance, PM-KISAN state top-up, agri cess on commodity exchanges, MGNREGS + Centre co-funding
+    </div>
+  </div>
+  <div class="points-grid">
+    <div class="point">
+      <div class="point-num">POINT 41</div>
+      <div class="point-title">Farmer Income Insurance (not just crop insurance)</div>
+      <div class="point-desc">Replace PMFBY with a Tamil Nadu state income insurance — compensating farmers when total farm income (not just crop yield) falls below 80% of baseline, covering all registered farmers with less than 5 acres at zero premium.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 42</div>
+      <div class="point-title">Cold Chain in Every Block</div>
+      <div class="point-desc">Build 385 block-level cold storage units (capacity 500 MT each) under PPP — funded by NABARD, operated by Farmer Producer Organisations, reducing post-harvest losses from current 30%+ to under 10% by Year 5.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 43</div>
+      <div class="point-title">Tamil Nadu Farmer Producer Company Network</div>
+      <div class="point-desc">Support formation of 5,000 Farmer Producer Companies (FPCs) over 5 years — each with minimum 200 members, state-provided business development support for 3 years, and access to ₹10 lakh seed equity from state fund.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 44</div>
+      <div class="point-title">Real-Time Market Price SMS/App Service</div>
+      <div class="point-desc">Every registered farmer gets free daily SMS and app notifications of mandai prices across 3 nearest markets for their registered crop — enabling better selling decisions and reducing exploitation by middlemen.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 45</div>
+      <div class="point-title">Water Body Restoration Mission</div>
+      <div class="point-desc">Restore and deepen 5,000 of Tamil Nadu's 39,000+ ancient tanks (eris) over 5 years using MGNREGS labour (₹400/day minimum wage), community ownership, and GPS-monitored progress — recharging 2 million acres of groundwater.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 46</div>
+      <div class="point-title">Solar Pump Scheme: Own It, Don't Lease It</div>
+      <div class="point-desc">Replace free electricity-for-farmers with a one-time subsidy for solar pump ownership (state pays 60%, farmer pays 40% via 5-year loan at 4% interest) — farmers own an asset, TANGEDCO reduces load, state saves ₹4,000 Cr/year within 4 years.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 47</div>
+      <div class="point-title">Natural Farming Incentive Programme</div>
+      <div class="point-desc">Pay farmers ₹6,000/acre/year for 3 years to transition to certified natural farming methods (zero chemical fertilizer), coupled with premium market linkage for produce — piloted in 5 districts, scaled on evidence.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 48</div>
+      <div class="point-title">Rural Roads: Panchayat Road Quality Guarantee</div>
+      <div class="point-desc">Every Gram Panchayat road built under PMGSY gets a 10-year maintenance bond — the contractor is legally responsible for quality; a QR-code on each road links to public complaint portal and contractor details.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 49</div>
+      <div class="point-title">Fishermen Welfare and Sea Safety</div>
+      <div class="point-desc">Provide every registered fisherman with a transponder device linked to coast guard, a ₹15 lakh state life insurance policy at ₹500/year premium (state pays ₹400), and a ₹20,000 off-season income support tied to vessel registration renewal.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 50</div>
+      <div class="point-title">Rural Entrepreneurship Hubs (Gramiya Udyog)</div>
+      <div class="point-desc">Establish 100 rural entrepreneurship hubs in blocks with low industrial presence — offering makerspace, cold storage, internet, and business advisory services free for 2 years to rural youth starting agri-based enterprises.</div>
+    </div>
+  </div>
+  <div class="funding-strip">
+    <div class="funding-item"><strong>NABARD:</strong> Refinance for FPC equity and cold chain (₹8,000 Cr)</div>
+    <div class="funding-item"><strong>MGNREGS:</strong> Water body restoration labour cost Centre-funded</div>
+    <div class="funding-item"><strong>PM-KISAN top-up:</strong> State adds ₹2,000/yr to PM-KISAN for marginal farmers</div>
+    <div class="funding-item"><strong>TANGEDCO savings:</strong> Solar pump transition saves ₹4,000 Cr/yr from Year 4</div>
+  </div>
+</div>
+
+<!-- CATEGORY 6 -->
+<div class="category cat-6">
+  <div class="cat-header">
+    <div class="cat-number">CAT. 06 / 10</div>
+    <div class="cat-title">Technology &amp; Innovation</div>
+    <div class="cat-budget">
+      <strong>Budget: ₹12,000–16,000 Cr / 5 yrs</strong>
+      Funding: Tech industry cess, GCC contribution fund, IT export revenue share, ADB Digital India loan
+    </div>
+  </div>
+  <div class="points-grid">
+    <div class="point">
+      <div class="point-num">POINT 51</div>
+      <div class="point-title">Tamil Nadu AI Mission (TNAIM)</div>
+      <div class="point-desc">Create a dedicated AI Mission with a ₹2,000 crore corpus — funding Tamil-language AI models, AI-in-governance pilots (document processing, grievance routing, fraud detection), and Tamil Nadu's first public AI university in Madurai.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 52</div>
+      <div class="point-title">Unified Government Services App</div>
+      <div class="point-desc">Build a single "Tamil Nadu One" super-app delivering 200+ government services (certificates, permits, complaints, payments) in Tamil and English — targeted 30-minute turnaround for digital-native services, zero physical visits required.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 53</div>
+      <div class="point-title">Open Government Data Portal</div>
+      <div class="point-desc">Mandate all state departments to publish real-time anonymised data on a state open data portal (updated monthly) — covering contracts, beneficiary lists, project progress, and spending — creating a foundation for civil society accountability.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 54</div>
+      <div class="point-title">EV Manufacturing and Adoption Cluster</div>
+      <div class="point-desc">Designate Hosur-Krishnagiri as Tamil Nadu's EV manufacturing cluster with 5-year power tariff concession and expedited clearances — and mandate that 40% of new two-wheelers registered in Tamil Nadu by 2030 be electric.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 55</div>
+      <div class="point-title">Startup Tamil Nadu: Seed + Space</div>
+      <div class="point-desc">Offer every registered Tamil Nadu startup (under 3 years old) access to co-working space at ₹999/month in 15 state-run incubators, plus a ₹5 lakh non-dilutive grant for first product validation — targeting 10,000 funded startups in 5 years.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 56</div>
+      <div class="point-title">Cybersecurity Centre of Excellence</div>
+      <div class="point-desc">Establish a state Cyber Security Operations Centre (CSOC) protecting all government digital infrastructure in real time, and create a 500-person cybersecurity workforce pipeline from state engineering colleges with placement in state and private sector.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 57</div>
+      <div class="point-title">Tamil Language Technology Push</div>
+      <div class="point-desc">Fund development of Tamil LLMs, Tamil OCR, and Tamil voice-to-text tools as open-source public goods — enabling Tamil-medium digital access for the 70%+ of Tamil Nadu residents more comfortable in Tamil than English.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 58</div>
+      <div class="point-title">Drone Economy Policy</div>
+      <div class="point-desc">Create India's first state-level drone policy with designated corridors, a drone skill centre (training 5,000 drone operators/year), and a drone-based agri-surveillance and delivery pilot in 3 districts within Year 1.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 59</div>
+      <div class="point-title">Space Economy Participation</div>
+      <div class="point-desc">Leverage Tamil Nadu's existing aerospace base (ISRO, HAL) by creating an ₹800 crore Tamil Nadu Space Component Fund to co-invest in private space startups with a TN presence — capturing India's $44 billion space economy opportunity.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 60</div>
+      <div class="point-title">Digital Literacy for All: 1 Crore Citizens</div>
+      <div class="point-desc">Train 1 crore Tamil Nadu residents in basic digital literacy (banking apps, government portals, health apps) over 5 years — using Common Service Centres, libraries, and government school evening programmes, measured by periodic certification.</div>
+    </div>
+  </div>
+  <div class="funding-strip">
+    <div class="funding-item"><strong>IT cess:</strong> 0.1% cess on IT services turnover of TN companies (est. ₹1,800 Cr/yr)</div>
+    <div class="funding-item"><strong>GCC fund:</strong> Voluntary contribution from GCCs operating in TN (₹200 Cr/yr)</div>
+    <div class="funding-item"><strong>ADB loan:</strong> Asian Development Bank Digital India facility at 3.5% for 15 years</div>
+    <div class="funding-item"><strong>EV industry:</strong> Revenue from EV zone land lease reinvested in Tech Fund</div>
+  </div>
+</div>
+
+<!-- CATEGORY 7 -->
+<div class="category cat-7">
+  <div class="cat-header">
+    <div class="cat-number">CAT. 07 / 10</div>
+    <div class="cat-title">Environment &amp; Sustainability</div>
+    <div class="cat-budget">
+      <strong>Budget: ₹15,000–20,000 Cr / 5 yrs</strong>
+      Funding: Green bonds, carbon credit monetisation, CAMPA funds, public health cess on polluting industries
+    </div>
+  </div>
+  <div class="points-grid">
+    <div class="point">
+      <div class="point-num">POINT 61</div>
+      <div class="point-title">50% Renewable Energy by 2030</div>
+      <div class="point-desc">Tamil Nadu is already at 47% renewable capacity — push to 55% by 2030 through state-owned rooftop solar on all government buildings (5,000 MW target) and a new offshore wind policy with TANGEDCO offtake guarantee.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 62</div>
+      <div class="point-title">Cauvery and Vaigai River Rejuvenation</div>
+      <div class="point-desc">Launch a 5-year Cauvery and Vaigai river rejuvenation programme — removing encroachments, treating all sewage before discharge (STP mandate for all towns on riverbank), and planting 50 lakh native trees in catchment areas.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 63</div>
+      <div class="point-title">Coastal Ecosystem Protection Act</div>
+      <div class="point-desc">Pass a Tamil Nadu Coastal Ecosystem Act mandating mangrove restoration (target: 30,000 hectares by 2030), prohibiting sand mining within 5 km of river mouths, and creating a Coastal Development Authority with real-time satellite monitoring.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 64</div>
+      <div class="point-title">Air Quality Emergency Response System</div>
+      <div class="point-desc">Install 500 low-cost air quality sensors across Tamil Nadu cities (one per 10 sq km in urban areas), publish real-time data publicly, and trigger an automated industrial emission response protocol when AQI crosses 150 in any zone.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 65</div>
+      <div class="point-title">Urban Tree Cover: 20% by 2031</div>
+      <div class="point-desc">Mandate 20% tree canopy cover for all urban local bodies above 1 lakh population, enforced through satellite monitoring — each municipality penalised ₹50 lakh for each percentage point below target annually.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 66</div>
+      <div class="point-title">Tamil Nadu Green Bond Programme</div>
+      <div class="point-desc">Issue ₹10,000 crore in state-certified green bonds (SEBI framework) over 5 years, ring-fenced for renewable energy, water conservation, and green transport — creating a fiscally sustainable funding source for environmental goals.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 67</div>
+      <div class="point-title">Single-Use Plastic Elimination with Industry Transition Support</div>
+      <div class="point-desc">Phase out remaining single-use plastics by 2027 with a state-funded ₹500 crore transition support programme for small plastic manufacturers to shift to biodegradable alternatives — protecting 1.2 lakh jobs in the sector.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 68</div>
+      <div class="point-title">Traditional Water Harvesting Mandate</div>
+      <div class="point-desc">Require all new buildings above 2,000 sq ft to install rooftop rainwater harvesting as a condition of Occupancy Certificate — enforced through building plan approval, with state subsidy of ₹15,000 for compliance in BPL housing.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 69</div>
+      <div class="point-title">Biodiversity Hotspot Conservation Fund</div>
+      <div class="point-desc">Create a ₹2,000 crore Tamil Nadu Biodiversity Fund (from ecotourism levies and CAMPA) to protect the Western Ghats corridor, fund wildlife corridors between forest patches, and support 500 eco-enterprises run by tribal communities.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 70</div>
+      <div class="point-title">Climate Vulnerability Atlas for All 38 Districts</div>
+      <div class="point-desc">Commission and publish a district-level Climate Vulnerability Atlas (flood risk, heat stress, drought probability) — used as a mandatory input for all district development plans, infrastructure approvals, and agriculture policy decisions.</div>
+    </div>
+  </div>
+  <div class="funding-strip">
+    <div class="funding-item"><strong>Green bonds:</strong> ₹10,000 Cr raised over 5 years (SEBI-certified)</div>
+    <div class="funding-item"><strong>CAMPA:</strong> Central Compensatory Afforestation funds (TN entitlement ~₹1,200 Cr)</div>
+    <div class="funding-item"><strong>Carbon credits:</strong> Monetise mangrove and tree cover as carbon offsets (est. ₹400 Cr/yr)</div>
+    <div class="funding-item"><strong>Polluter cess:</strong> ₹2/tonne industrial effluent cess = ₹600 Cr/yr</div>
+  </div>
+</div>
+
+<!-- CATEGORY 8 -->
+<div class="category cat-8">
+  <div class="cat-header">
+    <div class="cat-number">CAT. 08 / 10</div>
+    <div class="cat-title">Governance &amp; Anti-Corruption</div>
+    <div class="cat-budget">
+      <strong>Budget: ₹4,000–6,000 Cr / 5 yrs</strong>
+      Funding: Administrative efficiency savings; fine/penalty revenue reinvestment; ADB governance reform grant
+    </div>
+  </div>
+  <div class="points-grid">
+    <div class="point">
+      <div class="point-num">POINT 71</div>
+      <div class="point-title">Tamil Nadu Lokayukta with Teeth</div>
+      <div class="point-desc">Strengthen the Tamil Nadu Lokayukta with suo motu powers, its own investigating staff (300 officers), and authority to register FIRs directly — with all complaints resolved within 180 days by law, and pendency published monthly.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 72</div>
+      <div class="point-title">Mandatory Annual Asset Disclosure for All Officials</div>
+      <div class="point-desc">Require every government officer from Grade A to Class IV to file annual asset declarations on a public portal — AI-flagged for disproportionate asset growth and referred to Lokayukta automatically within 30 days of filing.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 73</div>
+      <div class="point-title">e-Tender and Procurement Transparency</div>
+      <div class="point-desc">All government tenders above ₹5 lakh to be issued on a single state e-procurement portal with minimum 21-day bidding window, AI bid-analysis for cartel detection, and mandatory publishing of all evaluation reports within 7 days of award.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 74</div>
+      <div class="point-title">Direct Benefit Transfer for All Welfare Schemes</div>
+      <div class="point-desc">Transfer 100% of welfare cash (pensions, scholarships, maternity benefits) directly to Aadhaar-linked bank accounts — eliminating middlemen, reducing leakage from estimated 18% to under 3%, and saving ₹2,000+ crore annually.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 75</div>
+      <div class="point-title">Citizen Score Card for Every Government Service</div>
+      <div class="point-desc">Every government service delivery point (ration shop, PHC, government school, RTO) receives a monthly citizen rating (1–5 stars) via SMS — published on a state dashboard with officer names, creating bottom-up accountability.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 76</div>
+      <div class="point-title">Right to Time-Bound Service Act</div>
+      <div class="point-desc">Pass a comprehensive Right to Service Act mandating 42 key government services be delivered within defined timelines (birth certificate in 2 days, building permit in 30 days) with automatic compensation of ₹200/day for delays.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 77</div>
+      <div class="point-title">Whistleblower Protection and Reward</div>
+      <div class="point-desc">Create a state Whistleblower Protection Act giving complainants legal immunity and anonymity, with a ₹1 lakh reward for corruption disclosures leading to FIR; complaints handled by an independent ombudsman with 90-day resolution SLA.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 78</div>
+      <div class="point-title">Decentralisation: Real Power to Panchayats</div>
+      <div class="point-desc">Devolve 30% of state capital expenditure to Gram Panchayats (up from ~18%) with mandatory participatory budgeting — every village holds a public meeting to prioritise its ₹25 lakh+ annual allocation, with proceedings recorded and posted online.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 79</div>
+      <div class="point-title">Police Transfer Policy: End Political Postings</div>
+      <div class="point-desc">Create an independent Police Transfer and Posting Board (appointed by retired High Court judge) with a 3-year minimum tenure rule for all officers above Sub-Inspector rank — ending the political transfer cycle that undermines police independence.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 80</div>
+      <div class="point-title">Legislative Productivity Metrics</div>
+      <div class="point-desc">Publish a quarterly scorecard for each MLA — days attended, questions asked, bills moved, constituency funds utilised — on a public portal, creating democratic accountability between elections.</div>
+    </div>
+  </div>
+  <div class="funding-strip">
+    <div class="funding-item"><strong>Savings:</strong> DBT efficiency saves ₹2,000 Cr/yr from reduced leakage</div>
+    <div class="funding-item"><strong>Penalties:</strong> Right to Service Act delay penalties fund ombudsman operations</div>
+    <div class="funding-item"><strong>ADB grant:</strong> Governance Reform Technical Assistance programme</div>
+    <div class="funding-item"><strong>Procurement:</strong> Cartel-detection savings estimated 5–8% of contract value (~₹3,000 Cr/yr)</div>
+  </div>
+</div>
+
+<!-- CATEGORY 9 -->
+<div class="category cat-9">
+  <div class="cat-header">
+    <div class="cat-number">CAT. 09 / 10</div>
+    <div class="cat-title">Women, Youth &amp; Social Welfare</div>
+    <div class="cat-budget">
+      <strong>Budget: ₹35,000–44,000 Cr / 5 yrs</strong>
+      Funding: Women's welfare cess on IMFL, social bond issuance, CSR fund, reallocation from consolidated welfare budget
+    </div>
+  </div>
+  <div class="points-grid">
+    <div class="point">
+      <div class="point-num">POINT 81</div>
+      <div class="point-title">Women's Economic Empowerment Grant (Not a Dole)</div>
+      <div class="point-desc">Provide ₹1,500/month to women heads of non-income-tax-paying households — conditional on children's school attendance and bi-annual health checkup (soft conditionality, not punitive), phased from ₹1,500 to ₹2,000 as state finances improve.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 82</div>
+      <div class="point-title">SHG 2.0: From Savings to Enterprise</div>
+      <div class="point-desc">Upgrade 50,000 Self Help Groups from savings-and-loan circles into registered Small Enterprises — providing GST registration support, digital accounting tools, e-commerce linkage, and a dedicated ₹500 crore SHG Enterprise Fund at 4% interest.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 83</div>
+      <div class="point-title">Zero Tolerance for Child Labour: District Task Forces</div>
+      <div class="point-desc">Create 38 district Child Labour Elimination Task Forces (Labour + Police + Education) with real-time child tracking via school enrollment data — every child identified in labour must be in school within 30 days with family livelihood support.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 84</div>
+      <div class="point-title">Youth Internship in Government (TNPSG)</div>
+      <div class="point-desc">Create 50,000 paid government internships (₹10,000/month for 6 months) for graduates — working in district administration, PHCs, panchayats, and schools — giving real civic experience while filling frontline capacity gaps.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 85</div>
+      <div class="point-title">Universal Old-Age Pension: ₹1,500 Baseline</div>
+      <div class="point-desc">Guarantee ₹1,500/month to every person above 60 with no pension or formal income (no family-income test, only individual income test) — consolidated into a single scheme, paid monthly without requiring annual re-verification visits.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 86</div>
+      <div class="point-title">Disability Inclusion: 3% Government Jobs Quota Enforced</div>
+      <div class="point-desc">Audit all government departments for the mandated 3% PwD reservation — departments below target required to fill vacancies within 12 months, with a state Disability Commissioner empowered to issue compliance notices.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 87</div>
+      <div class="point-title">Safe Cities for Women: Lighting + Response</div>
+      <div class="point-desc">Install well-lit pedestrian pathways, panic buttons (connected to nearest police station), and women safety CCTV in all wards of the 21 municipal corporations within 2 years — with a 10-minute emergency response standard, measured and published.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 88</div>
+      <div class="point-title">TNPSC Annual Exam Calendar: No More Delays</div>
+      <div class="point-desc">Legislate a mandatory TNPSC exam calendar — all Group 1/2/4 and departmental exams published 2 years in advance, with a ₹5,000/day penalty on TNPSC Chairperson personally for calendar violations, removing political interference.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 89</div>
+      <div class="point-title">Transgender Welfare: Livelihood + Dignity</div>
+      <div class="point-desc">Establish a Tamil Nadu Transgender Welfare Board with ₹100 crore corpus — providing skill training, livelihood support, legal aid, identity document assistance, and reserved ward-level housing in all new affordable housing projects.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 90</div>
+      <div class="point-title">Sports Infrastructure: One Facility Per Block</div>
+      <div class="point-desc">Build or upgrade one multi-sport facility per block (385 total) with synthetic track, indoor courts, and coaching — prioritising rural Tamil Nadu where youth sports infrastructure is near-zero, creating 5,000 sports coaching jobs.</div>
+    </div>
+  </div>
+  <div class="funding-strip">
+    <div class="funding-item"><strong>IMFL cess:</strong> Dedicated women's welfare cess at ₹5/litre on IMFL (est. ₹1,500 Cr/yr)</div>
+    <div class="funding-item"><strong>Social bonds:</strong> ₹10,000 crore social bond issuance for welfare infrastructure</div>
+    <div class="funding-item"><strong>Reallocation:</strong> Consolidating 40+ welfare schemes under 8 = 12% admin cost saving</div>
+    <div class="funding-item"><strong>CSR mandate:</strong> TN-headquartered companies directed towards women/youth CSR</div>
+  </div>
+</div>
+
+<!-- CATEGORY 10 -->
+<div class="category cat-10">
+  <div class="cat-header">
+    <div class="cat-number">CAT. 10 / 10</div>
+    <div class="cat-title">Law &amp; Order</div>
+    <div class="cat-budget">
+      <strong>Budget: ₹8,000–12,000 Cr / 5 yrs</strong>
+      Funding: State police modernisation fund, Centre's SMPS grant, recovered criminal asset reinvestment
+    </div>
+  </div>
+  <div class="points-grid">
+    <div class="point">
+      <div class="point-num">POINT 91</div>
+      <div class="point-title">Police:Population Ratio to National Standard</div>
+      <div class="point-desc">Fill all 50,000+ vacant police posts in Tamil Nadu within 3 years via transparent recruitment — reaching 1:450 police-to-population ratio (vs 1:720 today), with priority to women officers (target 33% of new recruits).</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 92</div>
+      <div class="point-title">Body Cameras for All Field Officers</div>
+      <div class="point-desc">Equip every sub-inspector and above with body cameras (footage stored for 90 days on state server) — reducing false encounter claims, custodial abuse, and harassment, while protecting honest officers from false complaints.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 93</div>
+      <div class="point-title">Narcotics: Disrupt the Supply Chain</div>
+      <div class="point-desc">Create a Tamil Nadu Anti-Narcotics Force (1,000 officers, dedicated courts, financial investigation unit) — targeting supply networks, not just street users. All seizure data published monthly. Conviction rate target: 70% within 5 years.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 94</div>
+      <div class="point-title">Fast-Track Courts for Women and Child Cases</div>
+      <div class="point-desc">Establish 100 dedicated Fast-Track Courts for POCSO, sexual assault, and domestic violence cases — staffed with dedicated prosecutors, victim support officers, and a 6-month trial completion target, with monthly pendency dashboard.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 95</div>
+      <div class="point-title">Cybercrime Response Within 24 Hours</div>
+      <div class="point-desc">Build a Tamil Nadu Cybercrime Command Centre with 200 dedicated officers, trained in digital forensics — mandating first response to all online fraud complaints within 24 hours and fund freezing requests within 4 hours (India already has a 1930 helpline; operationalise it fully).</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 96</div>
+      <div class="point-title">Prison Reform: Skill and Rehabilitate</div>
+      <div class="point-desc">Transform Tamil Nadu's 132 prisons into rehabilitation centres — mandatory skill training (ITI-equivalent) for all prisoners serving more than 6 months, with industry placement support on release, targeting 40% reduction in repeat offending in 5 years.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 97</div>
+      <div class="point-title">Road Safety: Tamil Nadu Vision Zero</div>
+      <div class="point-desc">Implement Vision Zero — Tamil Nadu had 15,000+ road deaths in 2023. Enforce automated speed cameras on all national and state highways, mandatory helmet and seatbelt AI cameras at 500 junctions, targeting 50% reduction in road deaths by 2030.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 98</div>
+      <div class="point-title">Community Policing: Beat Officer Programme</div>
+      <div class="point-desc">Assign every police station a Beat Officer responsible for 5,000 residents — meeting each ward councillor and RWA monthly, building intelligence networks, and reducing response time from crime to arrest from current average of 48 hours to under 12.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 99</div>
+      <div class="point-title">Legal Aid as a Right, Not a Service</div>
+      <div class="point-desc">Establish 385 block-level Legal Aid Clinics (one per block) staffed by junior advocates paid ₹20,000/month by state — ensuring every citizen, regardless of income, has access to free legal representation for criminal, family, and civil matters.</div>
+    </div>
+    <div class="point">
+      <div class="point-num">POINT 100</div>
+      <div class="point-title">Electoral Rolls: Clean and Continuous</div>
+      <div class="point-desc">Partner with the Election Commission to implement continuous voter roll updation using death registries and Aadhaar de-duplication — eliminating ghost voters and ensuring every resident above 18 is enrolled without requiring them to apply, using school-leaving data as a registration trigger.</div>
+    </div>
+  </div>
+  <div class="funding-strip">
+    <div class="funding-item"><strong>SMPS:</strong> Centre's Smart & Safe Cities Police grant (₹2,000 Cr match)</div>
+    <div class="funding-item"><strong>Asset recovery:</strong> Attach and monetise criminal assets — estimated ₹800 Cr/yr for police modernisation</div>
+    <div class="funding-item"><strong>Traffic fines:</strong> AI camera revenue ring-fenced for road safety infrastructure</div>
+    <div class="funding-item"><strong>State fund:</strong> Direct police budget increase of 12% over 5 years</div>
+  </div>
+</div>
+
+<!-- GAME CHANGERS -->
+<div class="gamechanger-section">
+  <div class="section-heading">Top 10 Game-Changing Policies</div>
+  <div class="gc-grid">
+    <div class="gc-item">
+      <div class="gc-num">GC 01 — ECONOMY</div>
+      <div class="gc-title">TANGEDCO Financial Restructuring</div>
+      <div class="gc-why">Solving the ₹40,000 crore utility crisis unlocks ₹8,000 Cr/year in fiscal headroom — the single largest financial drain in Tamil Nadu governance.</div>
+    </div>
+    <div class="gc-item">
+      <div class="gc-num">GC 02 — AGRICULTURE</div>
+      <div class="gc-title">Solar Pump Ownership (Not Free Electricity)</div>
+      <div class="gc-why">Replaces an open-ended subsidy with a one-time asset transfer — farmers gain independence, TANGEDCO loses a loss-making load, state saves ₹4,000 Cr/yr by Year 4.</div>
+    </div>
+    <div class="gc-item">
+      <div class="gc-num">GC 03 — TECHNOLOGY</div>
+      <div class="gc-title">Tamil Nadu AI Mission + Tamil LLM</div>
+      <div class="gc-why">Making Tamil the language of digital access (not just a heritage language) is the most inclusive tech policy any Indian state has ever attempted — and Tamil Nadu has the talent to do it.</div>
+    </div>
+    <div class="gc-item">
+      <div class="gc-num">GC 04 — GOVERNANCE</div>
+      <div class="gc-title">AI-Powered Asset Disclosure Monitoring</div>
+      <div class="gc-why">For the first time, corruption detection becomes systematic rather than complaint-driven — disproportionate asset growth triggers automatic investigation, not political will.</div>
+    </div>
+    <div class="gc-item">
+      <div class="gc-num">GC 05 — URBAN</div>
+      <div class="gc-title">Municipal Bond Market Creation</div>
+      <div class="gc-why">Enabling Tamil Nadu cities to borrow directly from capital markets (as Pune and Ahmedabad did) breaks the state-grant dependency that has crippled urban infrastructure for decades.</div>
+    </div>
+    <div class="gc-item">
+      <div class="gc-num">GC 06 — HEALTHCARE</div>
+      <div class="gc-title">Universal Health Card (Single Platform)</div>
+      <div class="gc-why">Consolidating 6+ fragmented health schemes into one cashless card eliminates administrative duplication, prevents denial-of-care, and saves ₹1,500 crore annually in overhead.</div>
+    </div>
+    <div class="gc-item">
+      <div class="gc-num">GC 07 — ENVIRONMENT</div>
+      <div class="gc-title">Tamil Nadu Green Bond Programme</div>
+      <div class="gc-why">A ₹10,000 crore certified green bond programme makes Tamil Nadu India's first state to fund climate action from capital markets — unlocking international ESG investor interest.</div>
+    </div>
+    <div class="gc-item">
+      <div class="gc-num">GC 08 — GOVERNANCE</div>
+      <div class="gc-title">Panchayat Participatory Budgeting</div>
+      <div class="gc-why">Giving villages real control over ₹25 lakh+ annually (not rubber-stamp approval) is the most transformative decentralisation in Tamil Nadu's post-MGR governance history.</div>
+    </div>
+    <div class="gc-item">
+      <div class="gc-num">GC 09 — LAW</div>
+      <div class="gc-title">Police Transfer Independent Board</div>
+      <div class="gc-why">In a state where political transfers have paralysed honest policing for 40 years, a legally independent transfer board is not a reform — it is a revolution in rule-of-law.</div>
+    </div>
+    <div class="gc-item">
+      <div class="gc-num">GC 10 — EDUCATION</div>
+      <div class="gc-title">Outcome-Linked Scholarship Ladder</div>
+      <div class="gc-why">Replacing attendance-as-qualification with performance-as-qualification creates incentives rather than entitlements — and ensures Tamil Nadu's education spending actually produces outcomes, not just enrolment numbers.</div>
+    </div>
+  </div>
+</div>
+
+<!-- RISKS -->
+<div style="margin-bottom:28px;">
+  <div class="section-heading">3 Biggest Risks in This Manifesto</div>
+  <div class="risk-grid">
+    <div class="risk-item">
+      <div class="risk-num">RISK 01</div>
+      <div class="risk-title">Implementation Capacity Deficit</div>
+      <div class="risk-desc">Tamil Nadu's administrative machine is capable but stretched. Executing 100 programmes simultaneously risks superficial delivery across all rather than deep impact in any. Mitigation: Annual prioritisation of 20 points; 5-year phased rollout with Year 1 focused on governance foundations only.</div>
+    </div>
+    <div class="risk-item">
+      <div class="risk-num">RISK 02</div>
+      <div class="risk-title">Fiscal Overstretch if Revenue Underperforms</div>
+      <div class="risk-desc">The aggregate budget assumption requires 12–14% GSDP growth annually and successful bond issuance. An economic slowdown, a Centre-state revenue dispute, or a TANGEDCO crisis could collapse the fiscal plan. Mitigation: A "core 25" non-negotiable list; all other points are paused if deficit exceeds 3.5% GSDP.</div>
+    </div>
+    <div class="risk-item">
+      <div class="risk-num">RISK 03</div>
+      <div class="risk-title">Political Resistance to Anti-Corruption Reforms</div>
+      <div class="risk-desc">Points 71–80 directly threaten established interests — bureaucratic patronage networks, contractor cartels, and political appointees in police. A single-party majority is insufficient; sustained civil society and media pressure is required to prevent rollback. Mitigation: Legislate these as state law in Year 1 with constitutional protection where possible.</div>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST -->
+<div class="trust-section">
+  <div class="section-heading">Why Trust This Manifesto Over Traditional Parties</div>
+  <div class="trust-grid">
+    <div class="trust-item">
+      <div class="trust-label">Principle 01</div>
+      <div class="trust-title">Every promise has a price tag</div>
+      <div class="trust-desc">No party in Tamil Nadu 2026 has published a costed manifesto. Every point here names a funding source. You can verify it. You can hold it against the budget.</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-label">Principle 02</div>
+      <div class="trust-title">No dynasty, no debt to repay</div>
+      <div class="trust-desc">An independent candidate owes no contractor, no family member, and no alliance partner a favour. The only obligation is to the voter — and that is enforced through published KPIs on a public dashboard from Day 1.</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-label">Principle 03</div>
+      <div class="trust-title">Welfare that builds, not welfare that binds</div>
+      <div class="trust-desc">Every transfer in this manifesto is tied to something that expands human capability — education, health, asset ownership, skill. Handouts that create dependence are replaced by grants that create agency. This is not ideology. It is arithmetic: a Tamil Nadu that earns can give more than one that only borrows and distributes.</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <span>Therthal Arikkai 2026 — Independent People's Manifesto</span>
+  <span>Tamil Nadu Assembly Election · April 23, 2026</span>
+  <span>100 Points · 10 Categories · 1 Tamil Nadu</span>
+</div>
+
+</div>
+</body>
+</html>
